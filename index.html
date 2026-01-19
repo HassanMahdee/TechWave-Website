@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -10,40 +16,57 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="style.css" />
     <title>TechWave</title>
   </head>
   <body>
-    <header>
-      <h1 id="logo">Tech<span class="logo-sp">Wave</span></h1>
-      <nav id="menu">
+    <header class="navbar container">
+      <img src="assets/logo.png" alt="logo" class="logo" />
+      <nav class="menu">
+        <ul class="menu-list">
+          <li class="list-item">
+            <a href="#about" class="menu-link">About</a>
+          </li>
+          <li class="list-item">
+            <a href="#episodes" class="menu-link">Episodes</a>
+          </li>
+          <li class="list-item"><a href="#host" class="menu-link">Host</a></li>
+        </ul>
         <img
           src="assets/hamburger-menu.png"
           alt="hamburger menu"
-          class="ham-menu"
+          class="ham-img"
         />
-        <ul class="menu-list">
-          <li class="list-item"><a href="#about">About</a></li>
-          <li class="list-item"><a href="#episodes">Episodes</a></li>
-          <li class="list-item"><a href="#host">Host</a></li>
-        </ul>
       </nav>
       <button class="btn-1">Subscribe</button>
     </header>
     <main>
-      <section id="banner">
-        <img src="assets/microphone.png" alt="banner image of a microphone" />
-        <p class="pill">NEW</p>
-        <h2 class="banner-title">TechWave</h2>
-        <p class="banner-sub-title">
-          Your daily dose of tech insights, productivity hacks, and personal
-          growth.
-        </p>
-        <button class="btn-1">
-          <img src="assets/spotify.png" alt="spotify logo" />Listen On Spotify
-        </button>
-        <button class="btn-2">Subscribe</button>
+      <section id="banner" class="container">
+        <div class="img-box">
+          <img
+            src="assets/microphone.png"
+            alt="banner image of a microphone"
+            class="banner-img"
+          />
+          <p class="pill">NEW</p>
+        </div>
+        <div class="banner-content">
+          <h2 class="banner-title">TechWave</h2>
+          <p class="banner-text">
+            Your daily dose of tech insights, productivity hacks, and personal
+            growth.
+          </p>
+        </div>
+        <div class="btn-set">
+          <button class="btn-1">
+            <img src="assets/spotify.png" alt="spotify logo" />Listen On Spotify
+          </button>
+          <button class="btn-2">
+            <img src="assets/message.png" alt="envelope" />Subscribe
+          </button>
+        </div>
       </section>
-      <section id="about">
+      <section id="about" class="container">
         <div class="about-content">
           <h3 class="section-title">About the Podcast</h3>
           <p class="text">
@@ -76,7 +99,7 @@
           </div>
         </div>
       </section>
-      <section id="why-choose">
+      <section id="why-choose" class="container">
         <h3 class="section-title">Why Choose TechWave</h3>
         <div class="gridbox">
           <div class="col-1">
@@ -123,7 +146,7 @@
           </div>
         </div>
       </section>
-      <section id="episode">
+      <section id="episodes" class="container">
         <h3 class="section-title">Featured Episodes</h3>
         <div class="episode-cards">
           <div class="card">
@@ -161,7 +184,7 @@
           </div>
         </div>
       </section>
-      <section id="host">
+      <section id="host" class="container">
         <h3 class="section-title">Meet the Host</h3>
         <div class="host-intro">
           <img src="assets/host.png" alt="host" class="host-img" />
@@ -184,9 +207,14 @@
         </div>
       </section>
     </main>
-    <footer>
-      <img src="assets/logo.png" alt="logo">
-      <address><a href="assets/spotify.png">Spotify</a><a href="assets/apple-podcast.png">Apple Podcasts</a><a href="assets/youtube-podcast.png">YouTube</a><a href="assets/twitter.png">twitter</a></address>
+    <footer class="container">
+      <img src="assets/logo.png" alt="logo" />
+      <address>
+        <a href="assets/spotify.png">Spotify</a
+        ><a href="assets/apple-podcast.png">Apple Podcasts</a
+        ><a href="assets/youtube-podcast.png">YouTube</a
+        ><a href="assets/twitter.png">twitter</a>
+      </address>
       <p>&copy;2026 TechWave Podcast. All rights reserved.</p>
     </footer>
   </body>

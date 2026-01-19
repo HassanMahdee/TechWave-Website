@@ -1,5 +1,189 @@
+/* universal */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  max-width: 100%;
+  font-family: "inter", sans-serif;
+}
+/* common */
+:root {
+  --primary: #1a0e2e;
+  --primary-dark: #24153d;
+  --secondary: #2b1d4d;
+  --accent: #6eec87;
+  --white: #ffffff;
+}
+.container {
+  padding: 20px;
+  font-size: 16px;
+}
+/* individual */
+/*navbar*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary);
+}
+.logo {
+  max-width: 31%;
+}
+.menu {
+  display: flex;
+  gap: 32px;
+}
+.menu-list {
+  display: none;
+}
+.menu-link {
+  text-decoration: none;
+  color: var(--white);
+}
+.navbar .btn-1 {
+  display: none;
+}
+
+/*banner*/
+#banner {
+  background-image: url(assets/hero-bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: 40px;
+  background-color: var(--primary);
+}
+.img-box {
+  position: relative;
+  background-image: url(assets/hero-circle.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+.banner-img {
+  max-width: 60px;
+}
+.pill {
+  position: absolute;
+  top: 0%;
+  right: 30%;
+  background-color: var(--accent);
+  border-radius: 999px;
+  width: fit-content;
+  padding: 5px 15px;
+  box-shadow: #6eec87 0px 3px 27px 0px;
+}
+.banner-content {
+  margin: 24px auto;
+}
+.banner-title {
+  margin-bottom: 8px;
+  font-size: 2.5em;
+  font-weight: 800;
+  color: var(--white);
+  text-align: center;
+}
+.banner-text {
+  color: var(--white);
+  text-align: center;
+  font-weight: 400;
+  opacity: 0.8;
+}
+.btn-set {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.btn-1 {
+  color: var(--white);
+  background: linear-gradient(to top right, #f7d54a, #ef60b0, #986ef8);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 999px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 19px;
+  cursor: pointer;
+}
+.btn-1 img {
+  vertical-align: bottom;
+  margin-right: 8px;
+}
+.btn-2 {
+  color: var(--accent);
+  background: none;
+  padding: 12px 20px;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  font-size: 1em;
+  font-weight: 600;
+  line-height: 19px;
+  cursor: pointer;
+}
+.btn-2 img {
+  margin-right: 8px;
+}
+
+/*about*/
+#about {
+}
+.title {
+}
+.text {
+}
+.stats {
+}
+.stat-card {
+}
+.number {
+}
+.sub-title {
+}
+.text {
+}
+
+/*why-choose*/
+.why-choose {
+}
+title {
+}
+.gridbox {
+}
+.grid-card {
+}
+.sub-title {
+}
+.text {
+}
+
+/*episode*/
+.episode {
+}
+.title {
+}
+.episode-cards {
+}
+.img-bg {
+}
+.img {
+}
+.sub-title {
+}
+.text {
+}
+.duration {
+}
+
+/*footer*/
+.footer {
+}
+.footer-logo {
+}
+.address {
 }
