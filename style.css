@@ -114,6 +114,12 @@
   line-height: 19px;
   cursor: pointer;
 }
+.btn-1:hover {
+  background: linear-gradient(to top right, #986ef8, #f7d54a, #ef60b0);
+  transform: scale(1.05) translateY(-5px);
+  transform-origin: center;
+  transition: all 0.3s ease-in-out;
+}
 .btn-1 img {
   vertical-align: bottom;
   margin-right: 8px;
@@ -128,6 +134,12 @@
   font-weight: 600;
   line-height: 19px;
   cursor: pointer;
+}
+.btn-2:hover {
+  background-color: #3e854c;
+  transform: scale(1.05) translateY(-5px);
+  transform-origin: center;
+  transition: all 0.3s ease-in-out;
 }
 .btn-2 img {
   margin-right: 8px;
@@ -181,17 +193,36 @@
 }
 
 /*why-choose*/
-.why-choose {
-}
-title {
+#why-choose {
+  background-color: var(--primary-light);
 }
 .gridbox {
+  margin: 16px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
 }
-.grid-card {
+.col {
+  background-color: var(--secondary);
+  padding: 24px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.col img {
+  max-width: 60px;
 }
 .sub-title {
+  color: var(--white);
+  font-size: 1.45em;
+  margin: 16px 0;
 }
-.text {
+.col .text {
+  opacity: 0.6;
+  text-align: start;
+  line-height: 24px;
 }
 
 /*episode*/
@@ -279,6 +310,12 @@ title {
     line-height: 19px;
     cursor: pointer;
   }
+  .btn-1:hover {
+    background: linear-gradient(to top right, #986ef8, #f7d54a, #ef60b0);
+    transform: scale(1.05) translateY(-5px);
+    transform-origin: center;
+    transition: all 0.3s ease-in-out;
+  }
 
   /* banner */
   #banner {
@@ -306,5 +343,39 @@ title {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  
+  /*why-choose*/
+  .gridbox {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 30px;
+    grid-template-areas: 
+    "c1 c2 c2"
+    "c1 c3 c3"
+    "c4 c4 c5";
+  }
+  .col {
+    padding: 40px;
+    border-radius: 40px;
+  }
+  #col-1 {
+    grid-area: c1;
+  }
+  #col-2 {
+    grid-area: c2;
+  }
+  #col-3 {
+    grid-area: c3;
+  }
+  #col-4 {
+    grid-area: c4;
+  }
+  #col-5 {
+    grid-area: c5;
+  }
+  .col img {
+  }
+  .sub-title {
+  }
+  .col .text {
+  }
 }
