@@ -9,7 +9,7 @@
 /* common */
 :root {
   --primary: #1a0e2e;
-  --primary-dark: #24153d;
+  --primary-light: #24153d;
   --secondary: #2b1d4d;
   --accent: #6eec87;
   --white: #ffffff;
@@ -135,20 +135,49 @@
 
 /*about*/
 #about {
+  background-color: var(--primary);
 }
-.title {
+.section-title {
+  color: var(--white);
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
 }
 .text {
+  margin-top: 16px;
+  color: var(--white);
+  font-weight: 400;
+  line-height: 20px;
+  opacity: 0.8;
+  text-align: center;
 }
 .stats {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
 }
-.stat-card {
+.stat {
+  height: 84px;
+  width: 180px;
 }
-.number {
+.numbers {
+  color: var(--accent);
+  font-size: 2.5em;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 16px;
 }
-.sub-title {
-}
-.text {
+.details {
+  color: var(--white);
+  font-weight: 400;
+  text-align: center;
+  opacity: 0.8;
 }
 
 /*why-choose*/
@@ -216,9 +245,13 @@ title {
 
 /* large device */
 @media screen and (min-width: 992px) {
+  .container {
+    padding: 50px 200px;
+  }
   /* navbar */
   .navbar {
     padding: 30px 200px;
+    border-bottom: 1px solid #986ef841;
   }
   .logo {
     max-width: 219px;
@@ -264,4 +297,14 @@ title {
   .banner-title {
     font-size: 3.8em;
   }
+
+  /*about*/
+  .section-title {
+    font-size: 3em;
+  }
+  .stats {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  
 }
