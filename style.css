@@ -48,7 +48,7 @@
   background-image: url(assets/hero-bg.png);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position-y: 40px;
+  background-position: center 20%;
   background-color: var(--primary);
 }
 .img-box {
@@ -68,7 +68,7 @@
 .pill {
   position: absolute;
   top: 0%;
-  right: 30%;
+  left: calc(50% + 10px);
   background-color: var(--accent);
   border-radius: 999px;
   width: fit-content;
@@ -186,4 +186,27 @@ title {
 .footer-logo {
 }
 .address {
+}
+
+/* medium device */
+@media screen and (min-width: 576px) {
+  /*navbar*/
+  .menu-list {
+    display: flex;
+    gap: 2em;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: end;
+  }
+  .ham-img {
+    display: none;
+  }
+  .navbar.btn-1 {
+    display: none;
+  }
+
+  /*banner*/
+  #banner {
+    padding-top: 55px;
+  }
 }
